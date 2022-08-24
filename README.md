@@ -3,15 +3,15 @@
 
 ## Краткое описание эндпоинтов:
 /auth:
-POST - /auth/registration - регистрация пользователя, входные данные email и password.
-POST - /auth/login - логин пользователя, входные данные email и password.
+* POST - /auth/registration - регистрация пользователя, входные данные email и password.
+* POST - /auth/login - логин пользователя, входные данные email и password.
 
 /todos:
-POST - /todos - создание todo, входные данные title и text.
-GET - /todos?completed=true/false - получение всех todos, у которых поле isCompleted соответсвует значению в query.
-GET - /todos:id - получение todo по id, переданному в params.
-PATCH - /todos:id - изменение todo по id, входные данные title, text и isCompleted.
-DELETE - /todos:id - удаление todo по id.
+* POST - /todos - создание todo, входные данные title и text.
+* GET - /todos?completed=true/false - получение всех todos, у которых поле isCompleted соответсвует значению в query.
+* GET - /todos:id - получение todo по id, переданному в params.
+* PATCH - /todos:id - изменение todo по id, входные данные title, text и isCompleted.
+* DELETE - /todos:id - удаление todo по id.
 
 ## Краткое описание схем сущностей:
 ### UserSchema:
