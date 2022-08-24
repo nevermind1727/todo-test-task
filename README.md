@@ -15,6 +15,7 @@
 
 ## Краткое описание схем сущностей:
 ### UserSchema:
+```
 {
   @Prop({required: true})
   email: string;
@@ -25,8 +26,9 @@
   @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Todo' }] })
   todos: Todo[];
 }
-
+```
 ### TodoSchema:
+```
 {
   @Prop({required: true})
   title: string;
@@ -37,3 +39,4 @@
   @Prop({default: false})
   isCompleted: boolean;
 }
+```
