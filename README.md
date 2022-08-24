@@ -1,7 +1,7 @@
 Использовал Nest.js with MongoDB(mongoose).
 Решил немного подзаморочиться и реализовать авторизацию по jwt-токену.
 
-Краткое описание эндпоинтов:
+## Краткое описание эндпоинтов:
 /auth:
 POST - /auth/registration - регистрация пользователя, входные данные email и password.
 POST - /auth/login - логин пользователя, входные данные email и password.
@@ -13,8 +13,8 @@ GET - /todos:id - получение todo по id, переданному в par
 PATCH - /todos:id - изменение todo по id, входные данные title, text и isCompleted.
 DELETE - /todos:id - удаление todo по id.
 
-Краткое описание схем сущностей:
-UserSchema:
+## Краткое описание схем сущностей:
+### UserSchema:
 {
   @Prop({required: true})
   email: string;
@@ -26,7 +26,7 @@ UserSchema:
   todos: Todo[];
 }
 
-TodoSchema:
+### TodoSchema:
 {
   @Prop({required: true})
   title: string;
